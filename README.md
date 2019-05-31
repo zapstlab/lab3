@@ -8,15 +8,15 @@
 
 Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego funckje NFVO (NFV Orchestrator), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
-Celem ćwiczenia jest skonfigurowane Cloudify do współpracy z OpenStack, a następnie uruchomienie i przygotowanie Blueprintu, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej, a następnie przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia ilustrujemy w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
+W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a następnie przygotujemy i uruchomimy: blueprint TOSCA, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej oraz blueprint TOSCA, który przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia zilustrujemy, w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
 
-- tworzenia grup zabezpieczeń
+- tworzenia grup zabezpieczeń (poziomu OpenStack)
 - tworzenia sieci
 - tworzenia routerów
 - tworzenia maszyn wirtualnych
 - uruchamiania skryptów konfiguracyjnych na maszynach wirtualnych.
 
-UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Oczywiście jest możliwe poszerzenie zakresu eksperymentów we własnym zakresie, a nietrywialne i udokumentowane w sprawozdaniu próby, zwłaszcza dotyczące nowych elementów, będą honorowane bonusowymi punktami w wysokości do 20% maksymalnej nominalnej oceny za całe ćwiczenie.
+UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Jest jednak możliwe poszerzenie zakresu eksperymentów we własnym zakresie, a nietrywialne i udokumentowane w sprawozdaniu skutecznie przeprowadzone próby, zwłaszcza dotyczące elementów/funkcjonalności spoza zestawu wykorzystywanego w niniejszej instrukcji, będą honorowane bonusowymi punktami w wysokości do 20% maksymalnej nominalnej oceny za całe ćwiczenie.
 
 ## Wybrane odnośniki przydatne ćwiczeniu
 
