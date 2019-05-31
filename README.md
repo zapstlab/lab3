@@ -4,6 +4,8 @@
 # 
 ## Wprowadzenie
 
+Ćwiczenie pozwala na zapoznanie się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby NFVO i uruchamiania usług sieciowych w środowisku zwirtualizowanym o architekturze zbliżonej do NFV MANO, a na poziomie bardziej szczegółowym - na zestawienie ról NFVO i VIM, porównanie specyfikacji orkiestracyjnych TOSCA i HOT/HEAT OpenStack jako przykładów notacji do automatyzacji procesu zarządzania cyklem zyciowym, odpowiednio, usług sieciowych i usług IaaS. 
+
 Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego funckje NFVO (NFV Orchestrator), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
 Celem ćwiczenia jest skonfigurowane Cloudify do współpracy z OpenStack, a następnie uruchomienie i przygotowanie Blueprintu, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej, a następnie przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia ilustrujemy w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
@@ -13,8 +15,6 @@ Celem ćwiczenia jest skonfigurowane Cloudify do współpracy z OpenStack, a nas
 - tworzenia routerów
 - tworzenia maszyn wirtualnych
 - uruchamiania skryptów konfiguracyjnych na maszynach wirtualnych.
-
-Ćwiczenie pozwala na zapoznanie się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby NFVO i uruchamiania usług sieciowych w środowisku zwirtualizowanym o architekturze zbliżonej do NFV MANO, a na poziomie bardziej szczegółowym - na zestawienie ról NFVO i VIM, porównanie specyfikacji orkiestracyjnych TOSCA i HOT/HEAT OpenStack jako przykładów notacji do automatyzacji procesu zarządzania cyklem zyciowym, odpowiednio, usług sieciowych i usług IaaS. 
 
 UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Oczywiście jest możliwe poszerzenie zakresu eksperymentów we własnym zakresie, a nietrywialne i udokumentowane w sprawozdaniu próby, zwłaszcza dotyczące nowych elementów, będą honorowane bonusowymi punktami w wysokości do 20% maksymalnej nominalnej oceny za całe ćwiczenie.
 
