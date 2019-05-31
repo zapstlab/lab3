@@ -4,7 +4,7 @@
 # 
 ## Wprowadzenie
 
-Ćwiczenie pozwala na zapoznanie się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby NFVO i uruchamiania usług sieciowych w środowisku zwirtualizowanym o architekturze zbliżonej do NFV MANO, a na poziomie bardziej szczegółowym - na zestawienie ról NFVO i VIM, porównanie specyfikacji orkiestracyjnych TOSCA i HOT/HEAT OpenStack jako przykładów notacji do automatyzacji procesu zarządzania cyklem zyciowym, odpowiednio, usług sieciowych i usług IaaS. 
+Ćwiczenie pozwala na zapoznanie się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby NFVO i uruchamiania usług sieciowych w środowisku zwirtualizowanym o architekturze zbliżonej do NFV MANO oraz na zestawienie ról NFVO i VIM. Na poziomie bardziej szczegółowym pozwala porównać specyfikację orkiestracyjną TOSCA w odmianie Cloudify z notacją HOT/HEAT OpenStack, traktując je obie jako przykłady notacji służących do automatyzacji procesu zarządzania cyklem życiowym, odpowiednio, usług sieciowych i usług IaaS. 
 
 Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego funckje NFVO (NFV Orchestrator), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
