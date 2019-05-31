@@ -1,10 +1,10 @@
-# ĆWICZENIE: Wykorzystanie OpenStack w roli VIM przez orkiestrator Cloudify pełniący rolę NFVO
+# ĆWICZENIE: Wykorzystanie OpenStack przez orkiestrator Cloudify pełniący rolę NFVO
 
 ### Terminy NFVO i VIM stosujemy tu w rozumieniu architektury ETSI NFV.
 # 
 ## Wprowadzenie
 
-Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, z poziomu Cloudify pełniącego funckje NFVO, wykorzystamy OpenStack w roli VIM do wdrożenia prostej usługi chmurowej.
+Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego funckje NFVO (NFV Orchestrator), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
 Celem ćwiczenia jest skonfigurowane Cloudify do współpracy z OpenStack, a następnie uruchomienie i przygotowanie Blueprintu, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej, a następnie przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP.
 
