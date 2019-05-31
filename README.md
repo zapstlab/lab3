@@ -1,4 +1,4 @@
-# ĆWICZENIE: Orkiestracja usług sieciowych z Cloufify w roli NFVO i OpenStack w roli VIM
+# ĆWICZENIE: Orkiestracja usług sieciowych z Cloudify w roli NFVO i OpenStack w roli VIM
 
 ### Terminy NFVO i VIM stosujemy tu w rozumieniu architektury ETSI NFV.
 # 
