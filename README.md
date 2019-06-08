@@ -20,10 +20,11 @@ UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Jest j
 
 ## Wybrane odnośniki przydatne podczas realizacji ćwiczenia
 
-- blueprints https://docs.cloudify.co/4.6/developer/blueprints/
+- Cloudify: blueprints https://docs.cloudify.co/4.6/developer/blueprints/
     * DSL definitions https://docs.cloudify.co/4.2.0/blueprints/spec-dsl-definitions/
-- funkcje wewnętrzne (intrinsic functions) Cloudify https://docs.cloudify.co/4.6/developer/blueprints/spec-intrinsic-functions/
-- OpenStack CLI https://docs.openstack.org/python-openstackclient/ocata/command-list.html
+- Cloudify: funkcje wewnętrzne (intrinsic functions) https://docs.cloudify.co/4.6/developer/blueprints/spec-intrinsic-functions/
+- Cloudify: specyfikacja typów OpenStack Plugin https://docs.cloudify.co/4.5.0/working_with/official_plugins/openstack/#types
+- OpenStack: CLI https://docs.openstack.org/python-openstackclient/ocata/command-list.html
 
 # Przebieg ćwiczenia
 
