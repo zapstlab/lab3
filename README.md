@@ -37,7 +37,7 @@ cfy secrets list
 cfy secrets create os_username -s <username>
 cfy secrets create os_password -s <password>
 cfy secrets create os_tenant_name -s <project name>
-cfy secrets create os_keystone_url -s <url>
+cfy secrets create os_keystone_url -s <url-keystone> # <adres-dashbordu-maszyny-OpenStack>:5000/v3
 cfy secrets create os_region -s <region name>
 
 cfy secrets list
@@ -48,7 +48,7 @@ cfy secrets get os_keystone_url
 cfy secrets create os_username -s mojlogin_os
 cfy secrets create os_password -s mojehaslo_os
 cfy secrets create os_tenant_name -s cloudify-test
-cfy secrets create os_keystone_url -s http://192.168.186.11:5000/v3
+cfy secrets create os_keystone_url -s http://194.29.169.25:5000/v3
 cfy secrets create os_region -s RegionOne
 ```
 
