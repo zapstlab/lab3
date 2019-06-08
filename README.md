@@ -61,8 +61,8 @@ UWAGA: sekrety w Cloudify to wygodny mechanizm zapamiętywania parametrów, do k
 - Zerknij w zawartość Bluprintu blueprint.yaml i przygotuj plik z wartościami wejściowymi dla blueprintu, właściwymi dla Twojego projektu. Wzorzec tego pliku wejściowego znajdziesz w repozytorium pod nazwą values.yaml. Zauważ, że jako wymagane są tylko te parametry wejściowe, które w Blueprincie nie mają zdefiniowanych wartości domyślnych. Identyfikator odmiany maszyny oraz identyfikator obrazu Ubuntu 14.04 odczytaj za pomocą CLI openstack. Samo wykorzystanie pliku values.yaml ma w naszym ćwiczeniu zilustrować dość elastyczną formę dostarczania parametrów wejściowych do blueprintu na potrzeby tworzonego deploymentu: z (dodatkowych) plików zewnętrznych. Wymagane wartości można znaleźć, zależnie od elementu, posługując się albo linią komend openstak (source openrc.sh ..., lista komend wg linku we wstępie), albo konsolą GUI Openstack.
 
 ```
- cfy blueprint upload -b openstack ./blueprint.yaml
- cfy deployments create -b openstack openstack-dep --inputs values.yaml
+ cfy blueprint upload -b apacheserv ./blueprint.yaml
+ cfy deployments create -b apacheserv apacheserv-dep --inputs values.yaml
  
 ```
 Wejdź to dashboard Cloudify oraz przejrzyj zawartość utworzonego deploymentu. Zauważ sekcje z wartościami wejściowymi oraz wartościami wyjściowymi. Prześledź zależności pomiędzy tworzonymi obiektami w blueprincie oraz porównaj jego strukturę ze strukturą wzorca HEAT dla OpenStack wykorzystanego w ćwiczeniu 1 do instalacji Cloudify Managera; skomentuj główne zauważone analogie między nimi.
@@ -70,7 +70,7 @@ Wejdź to dashboard Cloudify oraz przejrzyj zawartość utworzonego deploymentu.
 - Uruchom workflow instalacyjny dla uprzednio utworzonego deploymentu:
 
 ```
-cfy executions start -d openstack-dep install
+cfy executions start -d apacheserv-dep install
 ```
 
 Będąc w oknie dashboard pokazującym szczegóły utworzonego deploymentu naciśnij wiersz z poleceniem "Install" - uruchomi to podgląd i zarazem wizualizację procesu instalacji maszyny w OpenStack razem z zależnościami.
