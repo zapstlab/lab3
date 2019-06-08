@@ -95,7 +95,7 @@ KOMENTARZ: W ćwiczeniu dla ułatwienia wykorzystujemy Ubuntu 14.04, ponieważ o
 
 - Utwórz nowy blueprint o nazwie np. blueprint-ext.yaml, który będzie rozwinięciem tego używanego w kroku 2. 
 - Zmodyfikuj w nowym blueprincie grupę zabezpieczeń tak, aby dostęp do portu 80 możliwy był tylko z sieci prywatnej oraz nie był możliwy z zewnątrz, np. z poziomu przeglądarki internetowej.
-- Blueprint zmodyfikuj tak aby razem z serwerem HTTP tworzona była dodatkowa maszyna wirtualna, której celem będzie weryfikacja dostępu do serwera HTTP. Do samej weryfikacji połączenia wykorzystaj skrypt connection.sh, który powinien być wywoływany w momencie tworzenia zależności / interfejsu między serwerem HTTP a klientem HTTP. 
+- Nowy blueprint zmodyfikuj tak, aby razem z serwerem HTTP tworzona była dodatkowa maszyna wirtualna, której celem będzie weryfikacja dostępu (połączenia) do serwera HTTP. Do samej weryfikacji dostępu wykorzystaj skrypt connection.sh, który powinien być wywoływany w momencie tworzenia zależności / interfejsu między serwerem HTTP a klientem HTTP. 
 - Po wykonaniu instalacji odczytaj zewnętrzny adres IP serwera HTTP i za pomocą przeglądarki zweryfikuj, że nie masz teraz do niego dostępu.
 
 # Sprawozdanie z ćwiczenia
