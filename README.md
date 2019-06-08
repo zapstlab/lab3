@@ -8,9 +8,9 @@
 
 Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego łącznie funkcje NFVO/VNFM (NFV Orchestrator, VNF Manager), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
-W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a następnie przygotujemy i uruchomimy: blueprint TOSCA, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej oraz blueprint TOSCA, który przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia zilustrujemy, w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
+W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a następnie przygotujemy i uruchomimy: (1) blueprint TOSCA, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej, oraz (2) blueprint TOSCA, który przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia zilustrujemy, w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
 
-- tworzenia grup zabezpieczeń (poziomu OpenStack)
+- tworzenia grup zabezpieczeń (grupy poziomu OpenStack)
 - tworzenia sieci
 - tworzenia routerów
 - tworzenia maszyn wirtualnych
@@ -18,7 +18,7 @@ W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a nast�
 
 UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Jest jednak możliwe poszerzenie zakresu eksperymentów we własnym zakresie, a nietrywialne i udokumentowane w sprawozdaniu skutecznie przeprowadzone próby, zwłaszcza dotyczące elementów/funkcjonalności spoza zestawu wykorzystywanego w niniejszej instrukcji, będą honorowane bonusowymi punktami w wysokości do 20% maksymalnej nominalnej oceny za całe ćwiczenie.
 
-## Wybrane odnośniki przydatne ćwiczeniu
+## Wybrane odnośniki przydatne podczas realizacji ćwiczenia
 
 - blueprints https://docs.cloudify.co/4.6/developer/blueprints/
     * DSL definitions https://docs.cloudify.co/4.2.0/blueprints/spec-dsl-definitions/
