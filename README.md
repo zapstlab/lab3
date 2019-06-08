@@ -66,7 +66,7 @@ UWAGA: sekrety w Cloudify to wygodny mechanizm zapamiętywania parametrów, do k
  cfy deployments create -b apacheserv apacheserv-dep --inputs values.yaml
  
 ```
-Wejdź to dashboard Cloudify oraz przejrzyj zawartość utworzonego deploymentu. Zauważ sekcje z wartościami wejściowymi oraz wartościami wyjściowymi. Prześledź zależności pomiędzy tworzonymi obiektami w blueprincie oraz porównaj jego strukturę ze strukturą wzorca HEAT dla OpenStack wykorzystanego w ćwiczeniu 1 do instalacji Cloudify Managera; skomentuj główne zauważone analogie między nimi.
+Wejdź to dashboard Cloudify oraz przejrzyj zawartość utworzonego deploymentu (wejdź w link Deploymnts w liście po lewej stronie). Zauważ sekcje z wartościami wejściowymi (Outputs) oraz wartościami wyjściowymi (od góry, mamy sekcje: Depluyment Topology,, Deployment Nodes, Deployment Outputs / Deployment Outputs/Capabilities, ...). Prześledź zależności pomiędzy tworzonymi obiektami w blueprincie oraz porównaj jego strukturę ze strukturą wzorca HEAT dla OpenStack wykorzystanego w ćwiczeniu 1 do instalacji Cloudify Managera; skomentuj główne zauważone analogie między nimi.
 
 - Uruchom workflow instalacyjny dla uprzednio utworzonego deploymentu:
 
@@ -89,7 +89,7 @@ ssh -i /home/centos/key.pem ubuntu@{vm_external_ip}
 
 - Odczytaj zewnętrzny adres IP serwera HTTP i za pomocą przeglądarki zweryfikuj, że masz do niego dostęp.
 
-KOMENTARZ: W ćwiczeniu wykorzystujemy Ubuntu 14.04, ponieważ obraz w tej wersji zawiera domyślnie zainstalowany Python, którego wymaga Cloudify. W przypadku wykorzystywania nowszej wersji Ubuntu trzeba byłoby samemu spreparować obraz maszyny z Pythonem i dopiero taki obraz zainstalowac w OpenStack i wskazywać Cloudify, co jednak nie wniosłoby nic nowego z punktu widzenia celów naszego ćwiczenia.  
+KOMENTARZ: W ćwiczeniu dla ułatwienia wykorzystujemy Ubuntu 14.04, ponieważ obraz w tej wersji zawiera już domyślnie zainstalowany Python, którego wymaga Cloudify. W przypadku wykorzystywania nowszej wersji Ubuntu trzeba byłoby najpierw samemu spreparować obraz maszyny z Pythonem i dopiero taki obraz zainstalować w OpenStack i wskazywać go Cloudify (co jednak nie wniosłoby nic nowego z punktu widzenia celów naszego ćwiczenia).  
 
 ## KROK 3: Weryfikacja działania serwera za pomocą zewnętrznego klienta HTTP
 
