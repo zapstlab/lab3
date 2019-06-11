@@ -100,4 +100,4 @@ KOMENTARZ: W ćwiczeniu dla ułatwienia wykorzystujemy Ubuntu 14.04, ponieważ o
 
 # Sprawozdanie z ćwiczenia
 
-Udokumentuj poszczególne kroki ćwiczenia zachowując odpowiednią numerację rozdziałów. W odrębnym punkcie podsumuj całe ćwiczenie. 
+Udokumentuj poszczególne kroki ćwiczenia zachowując odpowiednią numerację rozdziałów. W odrębnym punkcie podsumuj całe ćwiczenie.
