@@ -18,7 +18,7 @@ W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a nast�
 
 UWAGA: w ramach ćwiczenia należy wykonać szereg zaplanowanych kroków. Jest jednak możliwe poszerzenie zakresu eksperymentów we własnym zakresie, a nietrywialne i udokumentowane w sprawozdaniu skutecznie przeprowadzone próby, zwłaszcza dotyczące elementów/funkcjonalności spoza zestawu wykorzystywanego w niniejszej instrukcji, będą honorowane bonusowymi punktami w wysokości do 20% maksymalnej nominalnej oceny za całe ćwiczenie.
 
-## Wybrane odnośniki przydatne podczas realizacji ćwiczenia
+## Wybrane odnośniki przydatne w ćwiczeniu
 
 - Cloudify: blueprints https://docs.cloudify.co/4.6/developer/blueprints/
     * DSL definitions https://docs.cloudify.co/4.2.0/blueprints/spec-dsl-definitions/
