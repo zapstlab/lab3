@@ -4,7 +4,9 @@
 # 
 ## Wprowadzenie
 
-Ćwiczenie pozwala zapoznać się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby orkiestracji usługowej i uruchamiania usług sieciowych w środowisku zwirtualizowanym o architekturze zbliżonej do NFV MANO z wyróżnieniem ról NFVO+VNFM i VIM. Na poziomie bardziej szczegółowym pozwala porównać specyfikację orkiestracyjną TOSCA w odmianie Cloudify z notacją HOT/HEAT OpenStack, traktując je obie jako przykłady notacji służących do automatyzacji procesu zarządzania cyklem życiowym, odpowiednio, usług sieciowych i usług IaaS. 
+Ćwiczenie pozwala zapoznać się z pełnym procesem tworzenia bluprintów orkiestracyjnych TOSCA na potrzeby orkiestracji usługowej w środowisku zwirtualizowanym. Na poziomie bardziej szczegółowym pozwala porównać specyfikację orkiestracyjną TOSCA w odmianie Cloudify z notacją HOT/HEAT OpenStack, traktując je obie jako przykłady notacji służących do automatyzacji procesu zarządzania cyklem życiowym, odpowiednio, usług sieciowych i usług IaaS.
+
+WYJAŚNIENIE: Architektura naszej platformy jest zbliżona do NFV MANO, ale nie jest jej kanoniczną reprezentacją. W szczególności orkiestrator Cloudify pełni w niej rolę połączonej pary bloków NFVO+VNFM, zaś OpenStack - rolę VIM. Notacja TOSCA w Cloudify nie oddaje specyfiki profilu TOSCA dla NFV (http://docs.oasis-open.org/tosca/tosca-nfv/v1.0/tosca-nfv-v1.0.html), nie używa się też formatu csar do archiwizowania opisów usług i funkcji wirtualnych oraz skryptów konfiguracyjnych; dla uchwycenia istoty orkiestracji na bazie TOSCA odstępstwa te nie są jednak krytyczne.
 
 Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, ponieważ nie tworzyliśmy instancji działających usług (utworzenie maszyny managera Cloudify skryptem Openstack/Heat nie wchodzi w zakres takiej współpracy). W niniejszym ćwiczeniu, do wdrożenia prostej usługi chmurowej z poziomu orkiestratora Cloudify pełniącego łącznie funkcje pary NFVO/VNFM (NFV Orchestrator, VNF Manager), wykorzystamy OpenStack w roli VIM (Virtual Infrastructure Manager).
 
