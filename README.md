@@ -78,7 +78,7 @@ cfy executions start -d apacheserv-dep install
 
 Będąc w oknie dashboard pokazującym szczegóły utworzonego deploymentu naciśnij wiersz z poleceniem "Install" - uruchomi to podgląd i zarazem wizualizację procesu instalacji maszyny w OpenStack razem z zależnościami.
 
-- Aby uzyskać bezpośredni dostęp do utworzonej maszyny wirtualnej musisz wykorzystać klucz prywatny utworzony lokalnie przez Cloudify na maszynie cloudify-manager (Cloudify za pośrednictwem OpenStack wgrywa odpowiedni klucz publiczny na tworzoną maszynę wirtualną).
+- Aby uzyskać bezpośredni dostęp do utworzonej maszyny wirtualnej musisz wykorzystać klucz prywatny utworzony lokalnie przez Cloudify na maszynie cloudify-manager (Cloudify za pośrednictwem OpenStack wgrywa odpowiedni klucz publiczny na tworzoną maszynę wirtualną). Poniżej najpierw kopiujemy klucz prywatny na własny "home", żeby później nie trzeba było pracować jako "root" (krok dla wygody, opcjonalny).
 ```
 sudo cp /etc/cloudify/.ssh/id_rsa /home/centos/key.pem 
 sudo chown centos:centos /home/centos/key.pem 
