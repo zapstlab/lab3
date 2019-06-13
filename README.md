@@ -12,7 +12,7 @@ Pierwsze dwa ćwiczenia nie wymagały współpracy Cloudify z OpenStack, poniewa
 
 W ramach ćwiczenia skonfigurujemy Cloudify do współpracy z OpenStack, a następnie przygotujemy i uruchomimy: (1) blueprint TOSCA, który zainstaluje serwer Apache Tomcat na maszynie wirtualnej, oraz (2) blueprint TOSCA, który przetestuje jego działanie z poziomu drugiej maszyny wirtualnej z prostym klientem HTTP. W szczególności, w ramach ćwiczenia zilustrujemy, w jaki sposób Cloudify wykorzystuje OpenStack w roli VIM na potrzeby:
 
-- tworzenia grup zabezpieczeń (grupy poziomu OpenStack)
+- tworzenia grup zabezpieczeń (mechanizm poziomu OpenStack)
 - tworzenia sieci
 - tworzenia routerów
 - tworzenia maszyn wirtualnych
