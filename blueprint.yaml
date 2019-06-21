@@ -17,7 +17,7 @@ inputs:
     default: { get_secret: os_password }
 
   tenant_name:
-    description: OS_PROJECT_NAME jak w pliku openrc.sh
+    description: OS_PROJECT_NAME jak w pliku openrc.sh - nazwa projektu OpenStack, na którym pracujemy
     default: { get_secret: os_tenant_name }
     
   auth_url:
@@ -29,10 +29,10 @@ inputs:
     default: { get_secret: os_region }
 
   external_network_name:
-    description: Nazwa sieci external do polaczen ssh
+    description: Nazwa sieci external do polaczen ssh; w labie ZSUT.ITPW jest to sieć o nazwie external (po utworzeniu maszyny Cloudify, sprawdzić w dashboardzie OS)
     
   mgt_router_id:
-    description: Id routera podlaczonego do sieci external
+    description: Id routera podlaczonego do sieci external - sprawdzić "Sieci" (Networks) w dashboardzie OS
     
   nameservers:
     default: [8.8.4.4, 8.8.8.8]
