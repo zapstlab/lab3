@@ -61,7 +61,9 @@ UWAGA: sekrety w Cloudify to wygodny mechanizm zapamiętywania parametrów, do k
 
 ## KROK 2: Urchomienie Serwera Apache Tomcat
 
-- Zerknij w zawartość Bluprintu blueprint.yaml i przygotuj plik z wartościami wejściowymi dla blueprintu, właściwymi dla Twojego projektu. Wzorzec tego pliku wejściowego znajdziesz w repozytorium pod nazwą values.yaml. Zauważ, że jako wymagane są tylko te parametry wejściowe, które w Blueprincie nie mają zdefiniowanych wartości domyślnych. Identyfikator odmiany maszyny oraz identyfikator obrazu Ubuntu 14.04 odczytaj za pomocą CLI openstack. Samo wykorzystanie pliku values.yaml ma w naszym ćwiczeniu zilustrować dość elastyczną formę dostarczania parametrów wejściowych do blueprintu na potrzeby tworzonego deploymentu: z (dodatkowych) plików zewnętrznych. Wymagane wartości można znaleźć, zależnie od elementu, posługując się albo linią komend openstak (source openrc.sh ..., lista komend wg linku we wstępie), albo konsolą GUI Openstack.
+- Zerknij w zawartość Bluprintu blueprint.yaml i przygotuj plik values.yaml z wartościami wejściowymi dla blueprintu, właściwymi dla Twojego projektu. Wzorzec tego pliku wejściowego znajdziesz w repozytorium pod nazwą values.yaml. Zauważ, że jako wymagane w values.yaml są tylko te parametry wejściowe, które w Blueprincie nie mają zdefiniowanych wartości domyślnych. W pliku blueprint.yaml znajdziesz krótkie wyjaśnienia dotyczące wartości tych elementów - przykładowo, identyfikator rutera bedącego gatewayem oraz identyfikator obrazu Ubuntu 14.04 odczytasz za pomocą CLI OpenStack. 
+
+KOMENTARZ: Samo wykorzystanie pliku values.yaml ma w naszym ćwiczeniu zilustrować dość elastyczną formę dostarczania parametrów wejściowych do blueprintu na potrzeby tworzonego deploymentu: z (dodatkowych) plików zewnętrznych. Wymagane wartości można znaleźć, zależnie od elementu, posługując się albo linią komend openstak (source openrc.sh ..., lista komend wg linku we wstępie), albo konsolą GUI Openstack.
 
 ```
  cfy blueprint upload -b apacheserv ./blueprint.yaml
