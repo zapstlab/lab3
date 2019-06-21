@@ -38,7 +38,7 @@ Przed przystąpieniem do realizacji głównej części ćwiczenia należy skonfi
 ```
 cfy secrets list
 cfy secrets create os_username -s <username>
-cfy secrets create os_password -s <password>
+cfy secrets create os_password -s <password> # nazwa projektu danego zespołu
 cfy secrets create os_tenant_name -s <project name>
 cfy secrets create os_keystone_url -s <url-keystone> # <adres-dashbordu-maszyny-OpenStack>:5000/v3
 cfy secrets create os_region -s <region name>
