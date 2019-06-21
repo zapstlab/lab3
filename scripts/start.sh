@@ -19,7 +19,7 @@ server_is_up() {
 			return 0
 		fi
 	else
-		ctx logger error "Both curl, wget were not found in path"
+		ctx logger error "Both curl, wget not found in path"
 		exit 1
 	fi
 	return 1
@@ -33,7 +33,7 @@ do
 		STARTED=true
     	break
 	else
-		ctx logger info "Server not up. waiting 1 second."
+		ctx logger info "Server not started. Waiting 1 second."
 		sleep 1
 	fi
 done
