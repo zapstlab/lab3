@@ -46,10 +46,10 @@ inputs:
       end: 192.168.100.250
 
   image_id:
-    description: Identyfikator obrazu maszyny Ubuntu 14.04
+    description: Identyfikator obrazu maszyny Ubuntu 14.04 dla serwera Apache ("Obrazy" w dasboardzie OS)
 
   flavor_id:
-    description: Identyfikator odmiany maszyny wirtualnej
+    description: Identyfikator odmiany maszyny wirtualnej, ustawić 2 dla serwera Apache
 
   key_pair_name:
     description: nazwa pary kluczy do logowania w sesji ssh
