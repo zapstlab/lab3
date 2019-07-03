@@ -93,7 +93,7 @@ ssh -i /home/centos/key.pem ubuntu@{vm_external_ip}
 
 - Odczytaj zewnętrzny adres IP serwera HTTP i za pomocą przeglądarki zweryfikuj, że masz do niego dostęp.
 
-KOMENTARZ: Dla ułatwienia, w ćwiczeniu wykorzystujemy Ubuntu 14.04, ponieważ obraz w tej wersji zawiera domyślnie zainstalowany Python, którego wymaga Cloudify. W nowszych wersjah Ubuntu (16., 18.) trzeba byłoby najpierw samemu spreparować obraz maszyny z Pythonem i dopiero taki obraz przekazać do OpenStack.  
+KOMENTARZ: Dla ułatwienia, w ćwiczeniu wykorzystujemy Ubuntu 14.04, ponieważ obraz w tej wersji zawiera domyślnie zainstalowany Python, którego wymaga Cloudify. W nowszych wersjach Ubuntu (16., 18.) trzeba byłoby najpierw samemu spreparować obraz maszyny z Pythonem i dopiero taki obraz przekazać do OpenStack.  
 
 ## KROK 3: Weryfikacja działania serwera za pomocą zewnętrznego klienta HTTP
 
