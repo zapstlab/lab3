@@ -97,6 +97,8 @@ KOMENTARZ: Dla ułatwienia, w ćwiczeniu wykorzystujemy Ubuntu 14.04, ponieważ 
 
 ## KROK 3: Weryfikacja działania serwera za pomocą zewnętrznego klienta HTTP
 
+#### W tym kroku realizujemy własny blueprint - to zwieńczenie całego laboratorium i główna wartość dodana lab3.
+
 - Utwórz nowy blueprint o nazwie np. blueprint-ext.yaml, który będzie rozwinięciem tego używanego w kroku 2. 
 - Zmodyfikuj w nowym blueprincie grupę zabezpieczeń tak, aby dostęp do portu 80 możliwy był tylko z sieci prywatnej oraz nie był możliwy z zewnątrz, np. z poziomu przeglądarki internetowej wykorzystanej wyżej w kroku 2.
 - Nowy blueprint zmodyfikuj tak, aby razem z serwerem HTTP tworzona była dodatkowa maszyna wirtualna - klient HTTP, której celem będzie weryfikacja dostępu (połączenia) do serwera HTTP. Do samej weryfikacji dostępu wykorzystaj skrypt connection.sh, który powinien być wywoływany w momencie tworzenia zależności / interfejsu między klientem a serwerem HTTP. 
